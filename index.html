@@ -96,6 +96,11 @@ ul li {
 #projects {
   padding-top: 1px;   /* or padding-bottom */
 }
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;          /* both directions */
+}
 .project-card {
   display: flex;
   align-items: flex-start;
@@ -207,6 +212,7 @@ ul li {
 
   <!-- NEW: PROJECTS tab (placeholder content you can edit) -->
   <div id="projects" class="tab-section" style="font-size: 17px">
+      <div class="projects-grid">
       <div class="project-card">
            
     <div class="project-content">
@@ -249,7 +255,7 @@ establish a unified theoretical framework that comprehensively addresses MPNN re
     </div>
  
   </div>
-   
+      </div>
   </div>
 
   <!-- PUBLICATIONS tab: move your existing Publications block here -->
