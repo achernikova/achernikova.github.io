@@ -92,7 +92,7 @@ img {
 ul li {
   margin-bottom: 8px;   /* space between items */
 }
-      .project-card {
+.project-card {
   display: flex;
   align-items: flex-start;
   margin-bottom: 16px;
@@ -204,6 +204,25 @@ ul li {
   <!-- NEW: PROJECTS tab (placeholder content you can edit) -->
   <div id="projects" class="tab-section" style="font-size: 17px">
       <div class="project-card">
+           
+    <div class="project-content">
+      <h4 class="project-title">Automatic Circuit Extraction in Cross-Layer Transcoders</h4>
+      
+
+      <p class="project-links">
+        <a href="https://openreview.net/pdf?id=bVToNxLO9W" target="_blank"> NeurIPS 2025: NPGML</a>
+      </p>
+
+      <p class="project-text">
+      Existing theoretical guarantees for message passing neural networks (MPNNs) assume deterministic node features, whereas in this work we address the more realistic setting where inherent noise or finite measurement precision leads to uncertainty in node features. We assume node features are multivariate Gaussian distributions and propagate
+      their first and second moments through the MPNN architecture. We employ Polynomial Chaos Expansion to approximate nonlinearities,
+      and use the resulting node embedding distributions to analytically produce probabilistic node-wise robustness certificates against 
+      L2-bounded node feature perturbations. Moreover, we model node features as multivariate random variables and introduce Feature Convolution Distance,
+      FCDp, a Wasserstein distance-based pseudometric that matches the discriminative power of node-level MPNNs. We show that MPNNs are globally Lipschitz
+      continuous functions with respect to FCDp. Our framework subsumes the deterministic case via Dirac measures and provides a foundation for reasoning about
+      algorithmic stability in MPNNs with uncertainty in node features.
+      </p>
+    </div>
 
       <div class="project-content">
       <h4 class="project-title">Robustness and Generalization in Uncertainty-aware Message Passing Neural Networks</h4>
@@ -232,6 +251,7 @@ establish a unified theoretical framework that comprehensively addresses MPNN re
       algorithmic stability in MPNNs with uncertainty in node features.
       </p>
     </div>
+ 
   </div>
    
   </div>
