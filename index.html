@@ -262,43 +262,37 @@ establish a unified theoretical framework that comprehensively addresses MPNN re
       <div class="project-card">
            
     <div class="project-content">
-      <h4 class="project-title">Automatic Circuit Extraction in Cross-Layer Transcoders</h4>
+      <h4 class="project-title">Hyperbolic Geometry-Inspired Deep Neural Network Architectures</h4>
 
       <p class="project-text">
-      As modern AI systems, including LLMs, grow in scale and complexity, mechanistic interpretability has become essential to assess whether their internal computations are predictable, reliable, and aligned with human intent. Recent work has shown that sparse coding–based techniques, including sparse autoencoders, transcoders, and crosscoders, can isolate interpretable features in model activations, with many such features corresponding to meaningful semantic concepts. Anthropic’s introduction of Cross-Layer Transcoders (CLTs) and the Circuit Tracer tool represents a significant step forward: CLTs construct attribution graphs that trace how information propagates through an LLM for a given input, revealing groups of interacting neurons that plausibly form computational circuits. However, translating these dense attribution graphs into a concise, mechanistic explanation still relies heavily on human inspection.
+      Modern AI faces a critical efficiency crisis: DNNs require billions of parameters and consume enormous energy to achieve state-of-the-art performance, while remaining opaque ``black boxes'' whose decision-making processes cannot be understood or trusted. By grounding DNN architecture design in the geometric principles and hierarchical organization of natural neural networks, this project offers a principled path toward understanding how the resulting structural properties are related to learning efficiency, robustness, and generalization.
 
-      My research develops a fully automated framework to extract such circuits from CLT-generated attribution graphs. The approach begins with pruning based on importance weights, removing weak or irrelevant edges while preserving the dominant computational backbone. On this reduced graph, I apply a flow-based extraction method grounded in an information-flow analogy to electrical networks, which identifies pathways between selected source and target neurons. The resulting subgraph provides a candidate circuit that can be systematically interpreted by mapping its components to linguistic or semantic functions. This framework transforms a previously manual, ad hoc process into a scalable, principled methodology for uncovering the computational structure within LLMs, offering a path toward more transparent and trustworthy AI systems.
+In our work, we introduce a novel DNN architecture that exploits the geometry of derandomized hyperbolic graphs. Concretely, we begin by generating a derandomized hyperbolic graph that encodes a hierarchical organization among neurons. We then transform this graph into a directed acyclic graph (DAG) that serves as the backbone of our neural architecture. Hidden variables assigned to each node in the graph impose a natural hierarchical order, which we use to direct edges and layer the network in a feed-forward manner. This construction ensures acyclicity and establishes an intrinsic layered structure dictated by the graph geometry. Each neuron (graph node) is assigned to a layer based on the longest path from the input nodes, thereby limiting extraneous connections and redundant message passing. The resulting architecture is a sparse, directed network that retains the expressivity of a dense network, but with far fewer parameters.
 
+By reducing overlapping or unimportant paths, the architecture is not only more efficient but also more interpretable, since the hierarchical organization of connections aligns with clearer functional roles for each layer. This work represents a novel synthesis of ideas from statistical physics and deep learning, opening the door to principled new ways to design DNNs. 
       </p>
     </div>
       </div>
        <div class="project-card">
       <div class="project-content">
-      <h4 class="project-title">Robustness and Generalization in Uncertainty-aware Message Passing Neural Networks</h4>
+      <h4 class="project-title">SPM</h4>
 
       <p class="project-text">
-     Existing theoretical guarantees for message passing neural networks (MPNNs) assume deterministic node features. We address the more realistic situation where noise or finite measurement precision lead to uncertainties in the values of node features. First, we quantify uncertainty by propagating the moments of node-feature distributions through the MPNN architecture. To propagate the moments through activation functions, we use second-order Taylor expansion and pseudo-Taylor polynomial expansion (PTPE). We use the resulting node embedding distributions to analytically generate probabilistic adversarial robustness certificates for node classification tasks against the L2-bounded perturbations of the node features. Second, we model node features as multivariate random variables and propose a Wasserstein distance-based pseudo-metric, the Feature Convolution Distance FCDp, corresponding to the discriminative power of MPNNs at the node level. We show that MPNNs are global Lipschitz continuous functions with respect to the introduced pseudo-metric FCDp. Using the covering number of the resulting pseudometric space (which is a subset of the Wasserstein space), we derive generalization bounds for MPNNs with uncertainties in the node features. Together, these two complementary approaches --- moment propagation for probabilistic robustness and the FCDp on the subset of the Wasserstein space for generalization --- 
-establish a unified theoretical framework that comprehensively addresses MPNN reliability under node feature uncertainty.
+     text
       </p>
     </div>
        </div>
 <div class="project-card">
     <div class="project-content">
-      <h4 class="project-title">Uncertainty-aware Message Passing Neural Networks</h4>
+      <h4 class="project-title">SPM Defense</h4>
       
 
       <p class="project-links">
-        <a href="https://openreview.net/pdf?id=bVToNxLO9W" target="_blank"> NeurIPS 2025: NPGML</a>
+        <a href="" target="_blank"> ESORICS 2022</a>
       </p>
 
       <p class="project-text">
-      Existing theoretical guarantees for message passing neural networks (MPNNs) assume deterministic node features, whereas in this work we address the more realistic setting where inherent noise or finite measurement precision leads to uncertainty in node features. We assume node features are multivariate Gaussian distributions and propagate
-      their first and second moments through the MPNN architecture. We employ Polynomial Chaos Expansion to approximate nonlinearities,
-      and use the resulting node embedding distributions to analytically produce probabilistic node-wise robustness certificates against 
-      L2-bounded node feature perturbations. Moreover, we model node features as multivariate random variables and introduce Feature Convolution Distance,
-      FCDp, a Wasserstein distance-based pseudometric that matches the discriminative power of node-level MPNNs. We show that MPNNs are globally Lipschitz
-      continuous functions with respect to FCDp. Our framework subsumes the deterministic case via Dirac measures and provides a foundation for reasoning about
-      algorithmic stability in MPNNs with uncertainty in node features.
+     text
       </p>
     </div>
  
@@ -308,47 +302,22 @@ establish a unified theoretical framework that comprehensively addresses MPNN re
       <div class="project-card">
            
     <div class="project-content">
-      <h4 class="project-title">Automatic Circuit Extraction in Cross-Layer Transcoders</h4>
+      <h4 class="project-title">FENCE</h4>
 
       <p class="project-text">
-      As modern AI systems, including LLMs, grow in scale and complexity, mechanistic interpretability has become essential to assess whether their internal computations are predictable, reliable, and aligned with human intent. Recent work has shown that sparse coding–based techniques, including sparse autoencoders, transcoders, and crosscoders, can isolate interpretable features in model activations, with many such features corresponding to meaningful semantic concepts. Anthropic’s introduction of Cross-Layer Transcoders (CLTs) and the Circuit Tracer tool represents a significant step forward: CLTs construct attribution graphs that trace how information propagates through an LLM for a given input, revealing groups of interacting neurons that plausibly form computational circuits. However, translating these dense attribution graphs into a concise, mechanistic explanation still relies heavily on human inspection.
-
-      My research develops a fully automated framework to extract such circuits from CLT-generated attribution graphs. The approach begins with pruning based on importance weights, removing weak or irrelevant edges while preserving the dominant computational backbone. On this reduced graph, I apply a flow-based extraction method grounded in an information-flow analogy to electrical networks, which identifies pathways between selected source and target neurons. The resulting subgraph provides a candidate circuit that can be systematically interpreted by mapping its components to linguistic or semantic functions. This framework transforms a previously manual, ad hoc process into a scalable, principled methodology for uncovering the computational structure within LLMs, offering a path toward more transparent and trustworthy AI systems.
-
+     text
       </p>
     </div>
       </div>
        <div class="project-card">
       <div class="project-content">
-      <h4 class="project-title">Robustness and Generalization in Uncertainty-aware Message Passing Neural Networks</h4>
+      <h4 class="project-title">SDC</h4>
 
       <p class="project-text">
-     Existing theoretical guarantees for message passing neural networks (MPNNs) assume deterministic node features. We address the more realistic situation where noise or finite measurement precision lead to uncertainties in the values of node features. First, we quantify uncertainty by propagating the moments of node-feature distributions through the MPNN architecture. To propagate the moments through activation functions, we use second-order Taylor expansion and pseudo-Taylor polynomial expansion (PTPE). We use the resulting node embedding distributions to analytically generate probabilistic adversarial robustness certificates for node classification tasks against the L2-bounded perturbations of the node features. Second, we model node features as multivariate random variables and propose a Wasserstein distance-based pseudo-metric, the Feature Convolution Distance FCDp, corresponding to the discriminative power of MPNNs at the node level. We show that MPNNs are global Lipschitz continuous functions with respect to the introduced pseudo-metric FCDp. Using the covering number of the resulting pseudometric space (which is a subset of the Wasserstein space), we derive generalization bounds for MPNNs with uncertainties in the node features. Together, these two complementary approaches --- moment propagation for probabilistic robustness and the FCDp on the subset of the Wasserstein space for generalization --- 
-establish a unified theoretical framework that comprehensively addresses MPNN reliability under node feature uncertainty.
+    text
       </p>
     </div>
        </div>
-<div class="project-card">
-    <div class="project-content">
-      <h4 class="project-title">Uncertainty-aware Message Passing Neural Networks</h4>
-      
-
-      <p class="project-links">
-        <a href="https://openreview.net/pdf?id=bVToNxLO9W" target="_blank"> NeurIPS 2025: NPGML</a>
-      </p>
-
-      <p class="project-text">
-      Existing theoretical guarantees for message passing neural networks (MPNNs) assume deterministic node features, whereas in this work we address the more realistic setting where inherent noise or finite measurement precision leads to uncertainty in node features. We assume node features are multivariate Gaussian distributions and propagate
-      their first and second moments through the MPNN architecture. We employ Polynomial Chaos Expansion to approximate nonlinearities,
-      and use the resulting node embedding distributions to analytically produce probabilistic node-wise robustness certificates against 
-      L2-bounded node feature perturbations. Moreover, we model node features as multivariate random variables and introduce Feature Convolution Distance,
-      FCDp, a Wasserstein distance-based pseudometric that matches the discriminative power of node-level MPNNs. We show that MPNNs are globally Lipschitz
-      continuous functions with respect to FCDp. Our framework subsumes the deterministic case via Dirac measures and provides a foundation for reasoning about
-      algorithmic stability in MPNNs with uncertainty in node features.
-      </p>
-    </div>
- 
-  </div>
       </div>
   </div>
 
