@@ -97,9 +97,9 @@ ul li {
   padding-top: 1px;   /* or padding-bottom */
 }
 .projects-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;          /* both directions */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;          /* space between the three divs */
 }
 .project-card {
   display: flex;
