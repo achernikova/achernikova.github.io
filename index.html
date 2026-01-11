@@ -92,6 +92,42 @@ img {
 ul li {
   margin-bottom: 8px;   /* space between items */
 }
+      .project-card {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.project-image {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 16px;
+}
+
+.project-content {
+  max-width: 600px;
+}
+
+.project-title {
+  margin: 0 0 4px 0;
+  font-size: 18px;
+  color: #6b5b95;
+}
+
+.project-links a {
+  color: #6b5b95;
+  text-decoration: none;
+  margin-right: 8px;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
+
+.project-text {
+  margin-top: 6px;
+}
 </style>
 
 <head>
@@ -163,11 +199,25 @@ ul li {
 
   <!-- NEW: PROJECTS tab (placeholder content you can edit) -->
   <div id="projects" class="tab-section" style="font-size: 17px">
-    <ul>
-      <li><b>Uncertainty-aware Message Passing Neural Networks</b> – ongoing work on robustness and uncertainty in graph ML models.</li>
-      <li><b>Cyber Network Resilience</b> – modeling and mitigation of self-propagating malware in large networks.</li>
-      <!-- Add more project items here -->
-    </ul>
+      <div class="project-card">
+    <img src="uampnn.png" alt="Uncertainty-aware MPNN" class="project-image">
+
+    <div class="project-content">
+      <h4 class="project-title">Uncertainty-aware Message Passing Neural Networks</h4>
+
+      <p class="project-links">
+        <a href="https://openreview.net/pdf?id=bVToNxLO9W" target="_blank">Paper</a>
+        ·
+        <a href="https://github.com/yourusername/uampnn" target="_blank">GitHub</a>
+      </p>
+
+      <p class="project-text">
+        Graph neural network model that propagates predictive uncertainty along message-passing
+        steps to improve robustness and calibration on graph benchmarks.
+      </p>
+    </div>
+  </div>
+   
   </div>
 
   <!-- PUBLICATIONS tab: move your existing Publications block here -->
