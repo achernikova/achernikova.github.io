@@ -137,6 +137,10 @@ ul li {
 .project-text {
   margin-top: 6px;
 }
+.project-text,
+.abstract-text {
+  text-align: justify;
+}
 </style>
 
 <head>
@@ -215,9 +219,9 @@ ul li {
       <h4 class="project-title">Automatic Circuit Extraction in Cross-Layer Transcoders</h4>
 
       <p class="project-text">
-      As modern AI systems, including LLMs, grow in scale and complexity, mechanistic interpretability has become essential to assess whether their internal computations are predictable, reliable, and aligned with human intent. Recent work has shown that sparse coding–based techniques, including sparse autoencoders, transcoders, and crosscoders, can isolate interpretable features in model activations, with many such features corresponding to meaningful semantic concepts. Anthropic’s introduction of Cross-Layer Transcoders (CLTs)~\cite{circuit} and the Circuit Tracer tool~\cite{ct} represents a significant step forward: CLTs construct attribution graphs that trace how information propagates through an LLM for a given input, revealing groups of interacting neurons that plausibly form computational circuits. However, translating these dense attribution graphs into a concise, mechanistic explanation still relies heavily on human inspection.
+      As modern AI systems, including LLMs, grow in scale and complexity, mechanistic interpretability has become essential to assess whether their internal computations are predictable, reliable, and aligned with human intent. Recent work has shown that sparse coding–based techniques, including sparse autoencoders, transcoders, and crosscoders, can isolate interpretable features in model activations, with many such features corresponding to meaningful semantic concepts. Anthropic’s introduction of Cross-Layer Transcoders (CLTs) and the Circuit Tracer tool represents a significant step forward: CLTs construct attribution graphs that trace how information propagates through an LLM for a given input, revealing groups of interacting neurons that plausibly form computational circuits. However, translating these dense attribution graphs into a concise, mechanistic explanation still relies heavily on human inspection.
 
-      My research develops a fully automated framework to extract such circuits from CLT-generated attribution graphs. The approach begins with pruning based on importance weights, removing weak or irrelevant edges while preserving the dominant computational backbone. On this reduced graph, I apply a flow-based extraction method grounded in an information-flow analogy to electrical networks~\cite{flow}, which identifies pathways between selected source and target neurons. The resulting subgraph provides a candidate circuit that can be systematically interpreted by mapping its components to linguistic or semantic functions. This framework transforms a previously manual, ad hoc process into a scalable, principled methodology for uncovering the computational structure within LLMs, offering a path toward more transparent and trustworthy AI systems.
+      My research develops a fully automated framework to extract such circuits from CLT-generated attribution graphs. The approach begins with pruning based on importance weights, removing weak or irrelevant edges while preserving the dominant computational backbone. On this reduced graph, I apply a flow-based extraction method grounded in an information-flow analogy to electrical networks, which identifies pathways between selected source and target neurons. The resulting subgraph provides a candidate circuit that can be systematically interpreted by mapping its components to linguistic or semantic functions. This framework transforms a previously manual, ad hoc process into a scalable, principled methodology for uncovering the computational structure within LLMs, offering a path toward more transparent and trustworthy AI systems.
 
       </p>
     </div>
