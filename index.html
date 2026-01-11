@@ -211,20 +211,12 @@ ul li {
            
     <div class="project-content">
       <h4 class="project-title">Automatic Circuit Extraction in Cross-Layer Transcoders</h4>
-      
-
-      <p class="project-links">
-        <a href="https://openreview.net/pdf?id=bVToNxLO9W" target="_blank"> NeurIPS 2025: NPGML</a>
-      </p>
 
       <p class="project-text">
-      Existing theoretical guarantees for message passing neural networks (MPNNs) assume deterministic node features, whereas in this work we address the more realistic setting where inherent noise or finite measurement precision leads to uncertainty in node features. We assume node features are multivariate Gaussian distributions and propagate
-      their first and second moments through the MPNN architecture. We employ Polynomial Chaos Expansion to approximate nonlinearities,
-      and use the resulting node embedding distributions to analytically produce probabilistic node-wise robustness certificates against 
-      L2-bounded node feature perturbations. Moreover, we model node features as multivariate random variables and introduce Feature Convolution Distance,
-      FCDp, a Wasserstein distance-based pseudometric that matches the discriminative power of node-level MPNNs. We show that MPNNs are globally Lipschitz
-      continuous functions with respect to FCDp. Our framework subsumes the deterministic case via Dirac measures and provides a foundation for reasoning about
-      algorithmic stability in MPNNs with uncertainty in node features.
+      As modern AI systems, including LLMs, grow in scale and complexity, mechanistic interpretability has become essential to assess whether their internal computations are predictable, reliable, and aligned with human intent. Recent work has shown that sparse coding–based techniques, including sparse autoencoders, transcoders, and crosscoders, can isolate interpretable features in model activations, with many such features corresponding to meaningful semantic concepts. Anthropic’s introduction of Cross-Layer Transcoders (CLTs)~\cite{circuit} and the Circuit Tracer tool~\cite{ct} represents a significant step forward: CLTs construct attribution graphs that trace how information propagates through an LLM for a given input, revealing groups of interacting neurons that plausibly form computational circuits. However, translating these dense attribution graphs into a concise, mechanistic explanation still relies heavily on human inspection.
+
+      My research develops a fully automated framework to extract such circuits from CLT-generated attribution graphs. The approach begins with pruning based on importance weights, removing weak or irrelevant edges while preserving the dominant computational backbone. On this reduced graph, I apply a flow-based extraction method grounded in an information-flow analogy to electrical networks~\cite{flow}, which identifies pathways between selected source and target neurons. The resulting subgraph provides a candidate circuit that can be systematically interpreted by mapping its components to linguistic or semantic functions. This framework transforms a previously manual, ad hoc process into a scalable, principled methodology for uncovering the computational structure within LLMs, offering a path toward more transparent and trustworthy AI systems.
+
       </p>
     </div>
 
