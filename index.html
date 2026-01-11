@@ -201,12 +201,21 @@ ul li {
   <div id="projects" class="tab-section" style="font-size: 17px">
       <div class="project-card">
 
+      <div class="project-content">
+      <h4 class="project-title">Robustness and Generalization in Uncertainty-aware Message Passing Neural Networks</h4>
+
+      <p class="project-text">
+     Existing theoretical guarantees for message passing neural networks (MPNNs) assume deterministic node features. We address the more realistic situation where noise or finite measurement precision lead to uncertainties in the values of node features. First, we quantify uncertainty by propagating the moments of node-feature distributions through the MPNN architecture. To propagate the moments through activation functions, we use second-order Taylor expansion and pseudo-Taylor polynomial expansion (PTPE). We use the resulting node embedding distributions to analytically generate probabilistic adversarial robustness certificates for node classification tasks against the L2-bounded perturbations of the node features. Second, we model node features as multivariate random variables and propose a Wasserstein distance-based pseudo-metric, the Feature Convolution Distance FCDp, corresponding to the discriminative power of MPNNs at the node level. We show that MPNNs are global Lipschitz continuous functions with respect to the introduced pseudo-metric FCDp. Using the covering number of the resulting pseudometric space (which is a subset of the Wasserstein space), we derive generalization bounds for MPNNs with uncertainties in the node features. Together, these two complementary approaches --- moment propagation for probabilistic robustness and the FCDp on the subset of the Wasserstein space for generalization --- 
+establish a unified theoretical framework that comprehensively addresses MPNN reliability under node feature uncertainty.
+      </p>
+    </div>
+
     <div class="project-content">
       <h4 class="project-title">Uncertainty-aware Message Passing Neural Networks</h4>
       
 
       <p class="project-links">
-        <a href="https://openreview.net/pdf?id=bVToNxLO9W" target="_blank">Full Paper</a>
+        <a href="https://openreview.net/pdf?id=bVToNxLO9W" target="_blank">Full Paper, NeurIPS 2025: NPGML</a>
       </p>
 
       <p class="project-text">
