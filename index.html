@@ -1,17 +1,16 @@
-
 <!DOCTYPE html>
 <html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
 body{
-  }
-  
-html {
 }
 
+html {
+}
 
 .fa {
   padding: 10px;
@@ -42,18 +41,16 @@ html {
   background: #00aff0;
   color: white;
 }
-  
+
 .fa-telegram {
   background: #00aff0;
   color: white;
 }
-  
+
 .fa-github {
   background: #00aff0;
   color: white;
 }
-  
-
 
 img {
   float: left;
@@ -61,86 +58,163 @@ img {
   height: auto;
   margin-right:10px;
   border-radius: 50%;
-  }
-  
+}
+
+/* ---- NEW: simple tab styles ---- */
+.tab-buttons {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tab-buttons button {
+  background-color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 16px;
+  font-size: 16px;
+  color: #6b5b95;
+}
+
+.tab-buttons button.active {
+  border-bottom: 3px solid #ff7b25;
+  font-weight: bold;
+}
+
+.tab-section {
+  display: none;
+}
+
+.tab-section.active {
+  display: block;
+}
 </style>
-  <head>
+
+<head>
 <title>Alesia Chernikova</title>
 </head>
 
 <body>
 <div class="bg"></div>
-<div style = "margin-left: 10%; margin-right: 10%; display:block; align:center">
-<p> <img src="aradlab.jpg" alt="Avatar" width="160" height="200"> 
-  <p style = "font-size: 35px;color: #d64161; font-weight: bold">Alesia Chernikova  </p>
-  <p style = "font-size: 20px;color: #feb236">
-  Postdoctoral Research Associate</br>
-  a.chernikova@northeastern.edu</br>
-  <a href="Industry_Chernikova_CV.pdf" style="color:  #feb236; text-decoration: none" >CV </a></p>
+<div style="margin-left: 10%; margin-right: 10%; display:block; align:center">
 
-  
- <div style = "font-size: 17px"> 
-  
-Hi, I am a Postdoctoral Research Associate at the Network Science Institute at Northeastern University. I work under the supervision of Professor <a href = 'http://eliassi.org'  style="color: #6b5b95; text-decoration: none" >Tina Eliassi-Rad</a> and in collaboration with Professor <a href = 'https://www.dk-lab.net/personnel.html'  style="color: #6b5b95; text-decoration: none" >Dmitri Krioukov</a>. My research interests lie in the intersection of the theory of <font style="color: #ff7b25"> graph machine learning, network theory and trustworthy AI</font>.
-  <br/><br/>
-  I completed my Ph.D. in Computer Science at Northeastern University, where I was advised by Professor <a href = 'https://www.khoury.northeastern.edu/home/alina/'  style="color: #6b5b95; text-decoration: none" >Alina Oprea</a>. I was affiliated with the <a href = "https://nds2.ccs.neu.edu" style="color: #6b5b95; text-decoration: none" >NDS2 lab</a> and was a part of the Cybersecurity and Privacy Institute. During my doctoral years, I conducted research on adversarial machine learning and cybernetworks resilience.
-  <br/><br/>
-Before joining Northeastern, I received my BS degree in Applied Mathematics and Computer Science from Belarusian State University, where
-  I was affiliated with the Mathematical Modeling and Data Analysis Department under the supervision of Professor <a href = 'https://scholar.google.ru/citations?user=bT04cCIAAAAJ&hl=ru'  style="color: #6b5b95; text-decoration: none" >Vladimir Malugin </a>. My research focus included the design of hedging algorithms based on derivative contracts. Additionally, I was a part of the Research Institute of Applied Mathematics and Information Technology Problems, where 
-  I participated in the project for credit rankings estimation and evaluation of national enterprises using mathematical, statistical, and econometric methods and
-models.</p>
-  
- <p>My other interests include hiking and yoga, <a href = 'https://www.instagram.com/chromatic_film_photos/'  style="color: #6b5b95; text-decoration: none"> film photography</a> and visual art, music and soundscapes.
+  <!-- Header / profile block stays the same -->
+  <p><img src="aradlab.jpg" alt="Avatar" width="160" height="200"></p>
+  <p style="font-size: 35px;color: #d64161; font-weight: bold">Alesia Chernikova</p>
+  <p style="font-size: 20px;color: #feb236">
+    Postdoctoral Research Associate</br>
+    a.chernikova@northeastern.edu</br>
+    <a href="Industry_Chernikova_CV.pdf"
+       style="color:  #feb236; text-decoration: none">CV</a>
   </p>
-</div> 
-  
-  <div style = "font-size: 17px;margin-bottom:10px; display:block">
-    <h3 style = "color: #ff7b25"> Publications</h3>
-<ul>
-  <li>
-     <b>Robustness and Generalization in Uncertainty-aware Message Passing Neural Networks</b><br/>
-   Alesia Chernikova, Moritz Laber, Narayan G. Sabhahit, Tina Eliassi-Rad</br>
-    Under Submission
-  </li>
-    <li>
-     <b>Uncertainty-aware Message Passing Neural Networks</b><br/>
-   Alesia Chernikova, Moritz Laber, Narayan G. Sabhahit, Tina Eliassi-Rad<br/>
-     <a href = 'https://openreview.net/pdf?id=bVToNxLO9W' style="color: #6b5b95; text-decoration: none">New Perspectives in Graph Machine Learning NeurIPS 2025</a>
-  </li>
-   <li>
-     <b>Modeling Self-Propagating Malware with Epidemiological Models</b><br/>
-   Alesia Chernikova, Nicolò Gozzi, Simona Boboila, Nicola Perra, Tina Eliassi-Rad, and Alina Oprea<br/>
-     <a href = 'https://appliednetsci.springeropen.com/articles/10.1007/s41109-023-00578-z' style="color: #6b5b95; text-decoration: none">Applied Network Science (ANS) 2023</a>
-  </li>
-   <li>
-     <b>Cyber Network Resilience against Self-Propagating Malware Attacks</b><br/>
-   Alesia Chernikova, Nicolò Gozzi, Simona Boboila, Priyanka Angadi, John Loughner, Matthew Wilden, Nicola Perra, Tina Eliassi-Rad, and Alina Oprea<br/>
-     <a href = 'https://link.springer.com/chapter/10.1007/978-3-031-17140-6_26' style="color: #6b5b95; text-decoration: none">European Symposium on Research in Computer Security (ESORICS) 2022 </a>
-  </li>
-   <li>
-     <b>FENCE: Feasible Evasion Attacks on Neural Netwoks in Constrained Environments</b><br/>
-   Alesia Chernikova and Alina Oprea<br/>
-     <a href = 'https://doi.acm.org?doi=3544746' style="color: #6b5b95; text-decoration: none">ACM Transactions on Privacy and Security (ACM TOPS) 2022</a>
-  </li>
-  <li>
-  <b>Are Self-Driving Cars Secure? Evasion Attacks against Deep Neural Networks for Steering Angle Prediction</b><br/>
-  Alesia Chernikova, Alina Oprea, Cristina Nita-Rotaru and Baekgyu Kim<br/>
-   <a href = 'https://arxiv.org/pdf/1904.07370.pdf' style="color: #6b5b95; text-decoration: none">IEEE Safe Things S&P 2019</a>
-  </li>
-  <li>
-    <b>Hedging Algorithms Based on Interest-rate Swaps</b><br/>
-    Alesia Chernikova and Vladimir Malugin<br/>
-   In the 70th undergraduate, graduate, and postgraduate students scientific
-     conference of Belarusian State University (vol. 1, pp. 242 – 245)
-  </li>
+
+  <!-- NEW: tab buttons -->
+  <div class="tab-buttons">
+    <button class="tab-link active" data-target="about">About</button>
+    <button class="tab-link" data-target="projects">Projects</button>
+    <button class="tab-link" data-target="publications">Publications</button>
+  </div>
+
+  <!-- NEW: ABOUT tab (wrap your original intro text) -->
+  <div id="about" class="tab-section active" style="font-size: 17px">
+    <p>
+      Hi, I am a Postdoctoral Research Associate at the Network Science Institute at Northeastern University.
+      I work under the supervision of Professor
+      <a href='http://eliassi.org' style="color: #6b5b95; text-decoration: none">Tina Eliassi-Rad</a>
+      and in collaboration with Professor
+      <a href='https://www.dk-lab.net/personnel.html' style="color: #6b5b95; text-decoration: none">Dmitri Krioukov</a>.
+      My research interests lie in the intersection of the theory of
+      <font style="color: #ff7b25">graph machine learning, network theory and trustworthy AI</font>.
+      <br/><br/>
+      I completed my Ph.D. in Computer Science at Northeastern University, where I was advised by Professor
+      <a href='https://www.khoury.northeastern.edu/home/alina/'
+         style="color: #6b5b95; text-decoration: none">Alina Oprea</a>.
+      I was affiliated with the
+      <a href="https://nds2.ccs.neu.edu" style="color: #6b5b95; text-decoration: none">NDS2 lab</a>
+      and was a part of the Cybersecurity and Privacy Institute. During my doctoral years, I conducted research
+      on adversarial machine learning and cybernetworks resilience.
+      <br/><br/>
+      Before joining Northeastern, I received my BS degree in Applied Mathematics and Computer Science from
+      Belarusian State University, where I was affiliated with the Mathematical Modeling and Data Analysis Department
+      under the supervision of Professor
+      <a href='https://scholar.google.ru/citations?user=bT04cCIAAAAJ&hl=ru'
+         style="color: #6b5b95; text-decoration: none">Vladimir Malugin</a>.
+      My research focus included the design of hedging algorithms based on derivative contracts. Additionally, I was a
+      part of the Research Institute of Applied Mathematics and Information Technology Problems, where I participated
+      in the project for credit rankings estimation and evaluation of national enterprises using mathematical,
+      statistical, and econometric methods and models.
+    </p>
+
+    <p>
+      My other interests include hiking and yoga,
+      <a href='https://www.instagram.com/chromatic_film_photos/'
+         style="color: #6b5b95; text-decoration: none">film photography</a>
+      and visual art, music and soundscapes.
+    </p>
+  </div>
+
+  <!-- NEW: PROJECTS tab (placeholder content you can edit) -->
+  <div id="projects" class="tab-section" style="font-size: 17px">
+    <h3 style="color: #ff7b25">Projects</h3>
+    <ul>
+      <li><b>Uncertainty-aware Message Passing Neural Networks</b> – ongoing work on robustness and uncertainty in graph ML models.</li>
+      <li><b>Cyber Network Resilience</b> – modeling and mitigation of self-propagating malware in large networks.</li>
+      <!-- Add more project items here -->
     </ul>
   </div>
 
-  <footer >
-  <a href="https://twitter.com/AlesiaChernikov" class="fa fa-twitter"></a>
-  <a href="https://www.linkedin.com/in/alesia-chernikova" class="fa fa-linkedin"></a>
-  <a href="https://github.com/achernikova" class="fa fa-github"></a>
+  <!-- PUBLICATIONS tab: move your existing Publications block here -->
+  <div id="publications" class="tab-section" style="font-size: 17px;margin-bottom:10px; display:block">
+    <h3 style="color: #ff7b25">Publications</h3>
+    <ul>
+      <li>
+        <b>Robustness and Generalization in Uncertainty-aware Message Passing Neural Networks</b><br/>
+        Alesia Chernikova, Moritz Laber, Narayan G. Sabhahit, Tina Eliassi-Rad</br>
+        Under Submission
+      </li>
+      <li>
+        <b>Uncertainty-aware Message Passing Neural Networks</b><br/>
+        Alesia Chernikova, Moritz Laber, Narayan G. Sabhahit, Tina Eliassi-Rad<br/>
+        <a href='https://openreview.net/pdf?id=bVToNxLO9W'
+           style="color: #6b5b95; text-decoration: none">
+           New Perspectives in Graph Machine Learning NeurIPS 2025
+        </a>
+      </li>
+      <!-- ... keep the rest of your publication <li> items ... -->
+    </ul>
+  </div>
+
+  <footer>
+    <a href="https://twitter.com/AlesiaChernikov" class="fa fa-twitter"></a>
+    <a href="https://www.linkedin.com/in/alesia-chernikova" class="fa fa-linkedin"></a>
+    <a href="https://github.com/achernikova" class="fa fa-github"></a>
   </footer>
+</div>
+
+<!-- NEW: tiny JS to switch tabs -->
+<script>
+  const buttons = document.querySelectorAll('.tab-link');
+  const sections = document.querySelectorAll('.tab-section');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // update buttons
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      // show correct section
+      const targetId = btn.getAttribute('data-target');
+      sections.forEach(sec => {
+        if (sec.id === targetId) {
+          sec.classList.add('active');
+        } else {
+          sec.classList.remove('active');
+        }
+      });
+    });
+  });
+</script>
+
 </body>
 </html>
-
