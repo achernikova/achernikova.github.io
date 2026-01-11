@@ -212,8 +212,7 @@ ul li {
       </p>
 
       <p class="project-text">
-        Graph neural network model that propagates predictive uncertainty along message-passing
-        steps to improve robustness and calibration on graph benchmarks.
+      description
       </p>
     </div>
   </div>
@@ -294,8 +293,23 @@ ul li {
           sec.classList.remove('active');
         }
       });
+      localStorage.setItem('activeTab', targetId);
     });
   });
+      
+const saved = localStorage.getItem('activeTab');
+  if (saved) {
+    // find button + section for saved tab
+    const btn = document.querySelector(`.tab-link[data-target="${saved}"]`);
+    const sec = document.getElementById(saved);
+    if (btn && sec) {
+      buttons.forEach(b => b.classList.remove('active'));
+      sections.forEach(s => s.classList.remove('active'));
+      btn.classList.add('active');
+      sec.classList.add('active');
+    }
+  }
+      
 </script>
 
 </body>
