@@ -6,10 +6,22 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
-body{
+
+html, body {
+  height: 100%;
+  margin: 0;
 }
 
-html {
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Wrap all main content (everything except <footer>) in a container */
+.page-wrapper {
+  flex: 1;   /* this pushes footer to the bottom */
+  display: flex;
+  flex-direction: column;
 }
 
 .fa {
@@ -148,6 +160,7 @@ ul li {
 </head>
 
 <body>
+<div class="page-wrapper">
 <div class="bg"></div>
 <div style="margin-left: 10%; margin-right: 10%; display:block; align:center">
 
@@ -453,6 +466,7 @@ By reducing overlapping or unimportant paths, the architecture is not only more 
              Reviewer:  <font style="color: #ff7b25">ACM TOPS, IEEE Transactions on Privacy</font>
        </li>
  </ul>
+</div>
 </div>
   <footer>
     <a href="https://twitter.com/AlesiaChernikov" class="fa fa-twitter"></a>
