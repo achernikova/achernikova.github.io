@@ -160,7 +160,8 @@ footer{
 <div style="margin-left: 10%; margin-right: 10%; display:block; align:center">
 
   <!-- Header / profile block stays the same -->
-  <p><img src="aradlab.jpg" alt="Avatar" width="160" height="200"></p>
+      
+  <p><img src="aradlab.jpg" alt="Avatar" width="160" height="200" onclick="var x = document.getElementById('sp'); SPCount = (SPCount + 1) % SPList.length; x.src = SPList[SPCount];"></p>
   <p style="font-size: 30px;color: #d64161; font-weight: bold">Alesia Chernikova</p>
   <p style="font-size: 20px;color: #F5273C">I am on the academic and industry job market! I will be grateful for any recommendations and job opportunities!</p>
   <p style="font-size: 20px;color: #feb236">
@@ -470,6 +471,10 @@ By reducing overlapping or unimportant paths, the architecture is not only more 
   </footer>
 
 <!-- NEW: tiny JS to switch tabs -->
+<script>
+	var SPList = ['aradlab.jpg', 'photo.jpeg'];
+  var SPCount = 0;
+</script>
 <script>
   const buttons = document.querySelectorAll('.tab-link');
   const sections = document.querySelectorAll('.tab-section');
